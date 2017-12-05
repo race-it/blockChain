@@ -14,6 +14,7 @@
 		C269F6D11FD6FFF4008B7A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C269F6CF1FD6FFF4008B7A7E /* LaunchScreen.storyboard */; };
 		C269F6DC1FD6FFF4008B7A7E /* BlockChainTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C269F6DB1FD6FFF4008B7A7E /* BlockChainTestTests.swift */; };
 		C269F6E71FD6FFF4008B7A7E /* BlockChainTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C269F6E61FD6FFF4008B7A7E /* BlockChainTestUITests.swift */; };
+		C269F6F51FD70116008B7A7E /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = C269F6F41FD70116008B7A7E /* Block.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		C269F6E21FD6FFF4008B7A7E /* BlockChainTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockChainTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C269F6E61FD6FFF4008B7A7E /* BlockChainTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockChainTestUITests.swift; sourceTree = "<group>"; };
 		C269F6E81FD6FFF4008B7A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C269F6F41FD70116008B7A7E /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		C269F6F61FD7034E008B7A7E /* BlockChainTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlockChainTest-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				C269F6CD1FD6FFF4008B7A7E /* Assets.xcassets */,
 				C269F6CF1FD6FFF4008B7A7E /* LaunchScreen.storyboard */,
 				C269F6D21FD6FFF4008B7A7E /* Info.plist */,
+				C269F6F41FD70116008B7A7E /* Block.swift */,
+				C269F6F61FD7034E008B7A7E /* BlockChainTest-Bridging-Header.h */,
 			);
 			path = BlockChainTest;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C269F6F51FD70116008B7A7E /* Block.swift in Sources */,
 				C269F6C91FD6FFF4008B7A7E /* ViewController.swift in Sources */,
 				C269F6C71FD6FFF4008B7A7E /* AppDelegate.swift in Sources */,
 			);
@@ -347,6 +353,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -368,6 +375,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "BlockChainTest/BlockChainTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -404,6 +412,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -417,6 +426,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "BlockChainTest/BlockChainTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -427,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8LH3DELSQ6;
 				INFOPLIST_FILE = BlockChainTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -442,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8LH3DELSQ6;
 				INFOPLIST_FILE = BlockChainTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -491,6 +503,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8LH3DELSQ6;
 				INFOPLIST_FILE = BlockChainTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,6 +520,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8LH3DELSQ6;
 				INFOPLIST_FILE = BlockChainTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -8,17 +8,25 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var blockChain = [Block]()
+        // Genisis block added.
+        blockChain.append(Block(index: 0, previousHash: "0", data: "My Genesis Block"))
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 
 
 }
