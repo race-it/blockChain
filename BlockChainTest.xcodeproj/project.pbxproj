@@ -15,6 +15,7 @@
 		C269F6DC1FD6FFF4008B7A7E /* BlockChainTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C269F6DB1FD6FFF4008B7A7E /* BlockChainTestTests.swift */; };
 		C269F6E71FD6FFF4008B7A7E /* BlockChainTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C269F6E61FD6FFF4008B7A7E /* BlockChainTestUITests.swift */; };
 		C269F6F51FD70116008B7A7E /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = C269F6F41FD70116008B7A7E /* Block.swift */; };
+		C269F6F81FD81CDF008B7A7E /* BlockChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C269F6F71FD81CDF008B7A7E /* BlockChain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C269F6E81FD6FFF4008B7A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C269F6F41FD70116008B7A7E /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		C269F6F61FD7034E008B7A7E /* BlockChainTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlockChainTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		C269F6F71FD81CDF008B7A7E /* BlockChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockChain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				C269F6CF1FD6FFF4008B7A7E /* LaunchScreen.storyboard */,
 				C269F6D21FD6FFF4008B7A7E /* Info.plist */,
 				C269F6F41FD70116008B7A7E /* Block.swift */,
+				C269F6F71FD81CDF008B7A7E /* BlockChain.swift */,
 				C269F6F61FD7034E008B7A7E /* BlockChainTest-Bridging-Header.h */,
 			);
 			path = BlockChainTest;
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C269F6F51FD70116008B7A7E /* Block.swift in Sources */,
+				C269F6F81FD81CDF008B7A7E /* BlockChain.swift in Sources */,
 				C269F6C91FD6FFF4008B7A7E /* ViewController.swift in Sources */,
 				C269F6C71FD6FFF4008B7A7E /* AppDelegate.swift in Sources */,
 			);

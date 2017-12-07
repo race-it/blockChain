@@ -14,22 +14,27 @@ class Block {
     var timestamp: Double?
     var data: String?
     var hash: String?
+    var nonce: Int = 0
 
-    func calculateHash(index: UInt, previousHash: String, timestamp: Double, data: String) -> String {
-        return sha512Hex(string: previousHash+data)
-    }
-
-    
     init(index: UInt, previousHash: String, data: String) {
         self.index = index
         self.previousHash = previousHash
         self.data = data
         self.timestamp = NSDate().timeIntervalSince1970
-        self.hash = calculateHash(index: index, previousHash: previousHash, timestamp: timestamp!, data: data)
+        self.hash = self.calculateHash()
     }
     
-    func getGenesisBlock(data: String) -> Block {
-        return Block(index: 0, previousHash: "0", data: data)
+    func calculateHash() -> String {
+        return sha512Hex(string: (self.index?.description)! + self.previousHash! + (self.timestamp?.description)! + self.data! + self.nonce.description)
+    }
+    
+    func mineBlock(difficulty: Int) {
+        let dificultyString = String(repeating: "0", count: difficulty)
+        while (!(self.hash?.hasPrefix(dificultyString))!) {
+            self.nonce += 1
+            self.hash = self.calculateHash()
+        }
+        print("BLOCK MINED: " + self.hash!)
     }
     
     /* sha functions */
